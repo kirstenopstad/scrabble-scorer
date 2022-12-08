@@ -1,13 +1,18 @@
-namespace ScrabbleScorer
+namespace ScrabbleScorer.Models
 {
   public class ScoreWord
   {
-    public string word { get; set; }
+    public string[] wordArray { get; set; }
 
     // properties, constructors, methods, etc. go here
     public ScoreWord(string userInput)
     {
-      word = "test";
+      wordArray = userInput.Split("");
+    }
+
+    public int ReturnScore() 
+    {
+      return 3;
     }
   }
 }
