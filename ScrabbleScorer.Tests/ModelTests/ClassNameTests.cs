@@ -8,10 +8,16 @@ namespace ScrabbleScorer.Tests
   {
     [TestMethod]
     // Test methods will go here
-    public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
+    public void StoreInput_TakeUserInputAndStore_Word()
     {
-      // any necessary logic to prep for test; instantiating new classes, etc.
-      // Template: ``` Assert.AreEqual(EXPECTED_RESULT, CODE_TO_TEST); ```
+      // Arrange
+      string userInput = "hello";
+
+      // Act
+      ScoreWord score = new ScoreWord(userInput);
+
+      // Assert
+      Assert.AreEqual("hello", score.word);
     }
   }
 }

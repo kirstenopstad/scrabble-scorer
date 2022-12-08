@@ -23,6 +23,45 @@ Make a console application that takes a word and returns the Scrabble score for 
   J, X                               8
   Q, Z                               10
 
+#### Specification
+Takes user input string word
+
+Calculates score based on Scrabble letter values
+  *   Store letter values in class Score Word - potentially as a dict, where *array* of letters is the key and the letter value is the value
+    b/u plan if can't store array as dict key: each letter is key that holds letter-value
+  Iterate through each letter
+  Get letter score
+  Add letter score to word total
+
+Returns int score
+
+
+Dictionary<string[], int> 
+
+  <!-- Non-MVP
+  - add multiple player functionality ()
+  - add abstract class Gameplay -->
+
+<!-- Play Scrabble 
+In the box: 
+  - a board (center start, double letter scores, etc.)
+  - finite number of letter tiles (A->Z + mystery)
+  - hand stand (where your letters go)
+
+Start a game:
+> Get # of players
+> Distribute [HAND_SIZE] (7?) tiles to each player
+> Decide who starts
+
+Play the game:
+> Unitl all letters have beed drawn && no more plays left
+  > Each player tries to build a word out of their "hand"
+    > if not the first word, word must connect with another word & not conflict with existing
+      > word has to be in dictionary
+    > if player can't make word, they're out of the game -->
+
+
+
 <!-- [x] Screenshots
 
 ![Screenshots](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.03bZmDGXaBhBYyxxp3Ls3gHaEA%26pid%3DApi&f=1&ipt=e980d57210242747a51c41421e1f09a6de3b1fdaeaadd297496787bb64e80c88&ipo=images) -->
