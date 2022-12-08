@@ -1,6 +1,6 @@
-# ProjectName
+# Scrabble Scorrer
 
-#### By Kirsten Opstad 
+#### By Kirsten Opstad, Richard Cha, Daniel Yakovlev
 
 #### A short description of ProjectName
 
@@ -13,6 +13,16 @@
 
 ### Objectives (MVP)
 
+Make a console application that takes a word and returns the Scrabble score for that word. Make sure to start with your specs, and that you include a README for this project and create a Git repository for it. Here are the values of letters in Scrabble:
+
+  A, E, I, O, U, L, N, R, S, T       1
+  D, G                               2
+  B, C, M, P                         3
+  F, H, V, W, Y                      4
+  K                                  5
+  J, X                               8
+  Q, Z                               10
+
 <!-- [x] Screenshots
 
 ![Screenshots](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.03bZmDGXaBhBYyxxp3Ls3gHaEA%26pid%3DApi&f=1&ipt=e980d57210242747a51c41421e1f09a6de3b1fdaeaadd297496787bb64e80c88&ipo=images) -->
@@ -21,8 +31,6 @@
 
 ### Goals
 1. Meet MVP
-2. Goal 2
-3. Goal 3
 
 ## Setup/Installation Requirements
 
