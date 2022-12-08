@@ -28,7 +28,7 @@ namespace ScrabbleScorer.Tests
       ScoreWord score = new ScoreWord(userInput);
 
       // Assert
-      CollectionAssert.AreEqual(new string[] {"h", "e", "l", "l", "o"}, score.wordArray);
+      CollectionAssert.AreEqual(new char[] {'H', 'E', 'L', 'L', 'O'}, score.wordArray);
     }
 
     [TestMethod]
@@ -41,7 +41,7 @@ namespace ScrabbleScorer.Tests
       {
         ScoreWord score = new ScoreWord(letter);
         //Assert
-        Assert.AreEqual(1, score);
+        Assert.AreEqual(1, score.ReturnScore());
       }      
     }
 
@@ -55,7 +55,7 @@ namespace ScrabbleScorer.Tests
       {
         ScoreWord score = new ScoreWord(letter);
         //Assert
-        Assert.AreEqual(2, score);
+        Assert.AreEqual(2, score.ReturnScore());
       }      
     }
 
@@ -69,7 +69,7 @@ namespace ScrabbleScorer.Tests
       {
         ScoreWord score = new ScoreWord(letter);
         //Assert
-        Assert.AreEqual(3, score);
+        Assert.AreEqual(3, score.ReturnScore());
       }      
     }
 
@@ -83,12 +83,12 @@ namespace ScrabbleScorer.Tests
       {
         ScoreWord score = new ScoreWord(letter);
         //Assert
-        Assert.AreEqual(4, score);
+        Assert.AreEqual(4, score.ReturnScore());
       }      
     }
 
     [TestMethod]
-    public void GetLetterScore_ReturnScoreOfSingleLetter_LetterScore()
+    public void GetLetterScore_ReturnScoreOfSingleLettersFive_LetterScore()
     {
       //Arrange // check all 5-point letters
       List<string> list = new List<string> {"K"} ;
@@ -97,12 +97,12 @@ namespace ScrabbleScorer.Tests
       {
         ScoreWord score = new ScoreWord(letter);
         //Assert
-        Assert.AreEqual(5, score);
+        Assert.AreEqual(5, score.ReturnScore());
       }      
     }
 
     [TestMethod]
-    public void GetLetterScore_ReturnScoreOfSingleLetter_LetterScore()
+    public void GetLetterScore_ReturnScoreOfSingleLetterEight_LetterScore()
     {
       //Arrange // check all 8-point letters
       List<string> list = new List<string> {"J", "X"} ;
@@ -111,12 +111,12 @@ namespace ScrabbleScorer.Tests
       {
         ScoreWord score = new ScoreWord(letter);
         //Assert
-        Assert.AreEqual(8, score);
+        Assert.AreEqual(8, score.ReturnScore());
       }      
     }
 
     [TestMethod]
-    public void GetLetterScore_ReturnScoreOfSingleLetter_LetterScore()
+    public void GetLetterScore_ReturnScoreOfSingleLetterTen_LetterScore()
     {
       //Arrange // check all 10-point letters
       List<string> list = new List<string> {"Q", "Z"} ;
@@ -125,7 +125,7 @@ namespace ScrabbleScorer.Tests
       {
         ScoreWord score = new ScoreWord(letter);
         //Assert
-        Assert.AreEqual(10, score);
+        Assert.AreEqual(10, score.ReturnScore());
       }      
     }
 
@@ -173,7 +173,7 @@ namespace ScrabbleScorer.Tests
     }
 
     [TestMethod]
-    public voide ReturnScore_TakeUserInputOfNonAlpha_0Score()
+    public void ReturnScore_TakeUserInputOfNonAlpha_0Score()
     {
       // Arrange
       string userInput = "$";
@@ -182,7 +182,7 @@ namespace ScrabbleScorer.Tests
       ScoreWord score = new ScoreWord("$");
 
       // Assert
-      Assert.AreEqual(0, score.ReturnScore())
+      Assert.AreEqual(0, score.ReturnScore());
     }
   }
 }
